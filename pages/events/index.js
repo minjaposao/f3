@@ -1,10 +1,10 @@
 import EventItem2 from '@/components/EventItem2';
-import Layout from '../components/Layout';
+import Layout from '@/components/Layout';
 
-export default function Home({ events }) {
+export default function Eventpage({ events }) {
   return (
     <Layout>
-      <h1>Sajt</h1>
+      event
       {events.map((evt) => (
         <EventItem2 key={evt.id} evt={evt} />
       ))}
